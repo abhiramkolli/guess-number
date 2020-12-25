@@ -7,11 +7,11 @@ print("Welcome to Number Guess " + name)
 while guessCheck=="wrong":
 	response=int(input("Please input a number between 0 and 20:"))
 	try:
-		val=int(response)
+		val=response
 	except ValueError:
 		print("This is not a valid integer. Please try again " + name)
 		continue
-	val=int (response)
+	val=response
 	if val<number:
 		print("This is lower than actual number. Please try again ." + name )
 	elif val>number:
